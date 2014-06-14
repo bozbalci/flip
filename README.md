@@ -42,7 +42,9 @@ It uses the [light chasing][lc] algorithm to solve the puzzle. The solving proce
 Performance
 -----------
 
-Solves a 5x5 puzzle (the standard) in 0.01 seconds, and ten random 12x12 puzzles in 34.8 seconds (in a pretty old machine). Can solve 14x14 puzzles, and in a very long time 15x15 puzzles, crashes on 16x16 and up.
+Solves a 5x5 puzzle (the standard) in 0.01 seconds, and ten random 12x12 puzzles in approx. 34.8 seconds (in a pretty old machine).
+
+It solved a random 15x15 puzzle in 83.63 seconds, 132 moves, and generated a solution table consisting of 32766 entries. The bulk of the computation is in brute-forcing the solution table. **TODO:** optimize the solution table generation process
 
 Example output
 --------------
