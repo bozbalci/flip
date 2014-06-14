@@ -1,10 +1,10 @@
 flip
-====
+----
 
 Attempts to solve any Flip puzzle (from [Simon Tatham's puzzle collection][sgt]) in the least number of moves. *Still in development!*
 
 Usage
-=====
+-----
 
 **TODO:** make this easier
 
@@ -20,7 +20,7 @@ Open the source code, and go to the `main()` function, and configure the grid `g
 The Solver object `s = Solver(g)` will then solve the Grid `g` (read the source code for further information)
 
 Standards
-=========
+---------
 
 * The lights which are turned on is denoted by a `1`, and the lights that are off are denoted by a `0`.
  
@@ -29,7 +29,7 @@ Standards
 * The solution table is in the `bottom row => top row` format.
 
 How it works
-============
+------------
 
 It uses the [light chasing][lc] algorithm to solve the puzzle. The solving procedure is as follows:
 
@@ -40,12 +40,12 @@ It uses the [light chasing][lc] algorithm to solve the puzzle. The solving proce
 5. If a move has been made twice, undo the move, minimalising the moves required for solution.
 
 Performance
-===========
+-----------
 
 Solves a 5x5 puzzle (the standard) in 0.01 seconds, and ten random 12x12 puzzles in 34.8 seconds (in a pretty old machine). Can solve 14x14 puzzles, and in a very long time 15x15 puzzles, crashes on 16x16 and up.
 
 Example output
-==============
+--------------
 
     Initial board
     *-----------*
@@ -86,11 +86,38 @@ Example output
     11100 => 01000
 
 Requirements
-============
+------------
 * Tested on Python 2.7.6
 
+License
+-------
+
+    Copyright (c) 2014, Berk Özbalcı
+    All rights reserved.
+    
+    Redistribution and use in source and binary forms, with or without modification,
+    are permitted provided that the following conditions are met:
+    
+    * Redistributions of source code must retain the above copyright notice, this
+      list of conditions and the following disclaimer.
+    
+    * Redistributions in binary form must reproduce the above copyright notice, this
+      list of conditions and the following disclaimer in the documentation and/or
+      other materials provided with the distribution.
+    
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+    ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+    ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 Links
-=====
+-----
 
 * [Flip, playable Java version][java]
 * [Flip, playable JS version][js]
