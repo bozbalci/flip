@@ -103,3 +103,4 @@ Links
 [js]: http://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/flip.html
 [exe]: http://www.chiark.greenend.org.uk/~sgtatham/puzzles/flip.exe
 [dl]: http://www.chiark.greenend.org.uk/~sgtatham/puzzles/#download
+[lc]: http://en.wikipedia.org/wiki/Lights_Out_%28game%29#Light_chasing
