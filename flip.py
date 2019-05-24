@@ -63,6 +63,11 @@ class Grid:
          for x, j in enumerate(i):
             self.grid[y][x] = 0
 
+   def fill(self):
+      for y, i in enumerate(self.grid):
+         for x, j in enumerate(i):
+            self.grid[y][x] = 1
+
    # Returns 0 or 1 depending on the light's state
    def get(self, x, y):
       if x > self.width - 1 or y > self.height - 1:
