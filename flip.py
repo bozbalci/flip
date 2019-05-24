@@ -247,17 +247,16 @@ class Solver:
    def minimize(self):
       # Temporary variable to work on toggles
       work = self.toggles
+      keep = [];
 
       # If i is in the list an even number of times, remove it,
       # else, keep it
       for i in work:
-         work.remove(i)
-         if i in work:
-            work.remove(i)
-         else:
+         if work.count(i) % 2 == 1:
+            keep.append(i)
             work.append(i)
 
-      self.toggles = work
+      self.toggles = keep
       self.moves = len(work)
 
    # Returns true if every light is set to zero
